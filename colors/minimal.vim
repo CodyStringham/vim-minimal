@@ -64,7 +64,7 @@ let s:constant         = s:primary
 let s:comment          = s:light_gray
 let s:selection        = s:light_blue
 let s:selection_fg     = s:black
-let s:ok               = s:light_green
+let s:ok               = s:cyan
 let s:warning          = s:yellow
 let s:error            = s:light_red
 

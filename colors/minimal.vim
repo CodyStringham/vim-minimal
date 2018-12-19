@@ -29,9 +29,9 @@ let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:light_black     = { "gui": "#424242", "cterm": "8"   }
 let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
-let s:light_gray      = { "gui": "#999999", "cterm": "249" }
-let s:lighter_gray    = { "gui": "#CCCCCC", "cterm": "251" }
-let s:lightest_gray   = { "gui": "#E5E5E5", "cterm": "251" }
+let s:light_gray      = { "gui": "#868C9E", "cterm": "249" }
+let s:lighter_gray    = { "gui": "#CCCCD4", "cterm": "251" }
+let s:lightest_gray   = { "gui": "#EEEFF7", "cterm": "251" }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
@@ -45,8 +45,7 @@ let s:dark_purple     = { "gui": "#523C79", "cterm": "5"   }
 let s:light_purple    = { "gui": "#6855DE", "cterm": "13"  }
 let s:light_yellow    = { "gui": "#F3E430", "cterm": "11"  }
 let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
-let s:primary         = { "gui": "#889AFF", "cterm": "11"  }
-let s:primary_light   = { "gui": "#7BD4FF", "cterm": "11"  }
+let s:primary         = { "gui": "#BDF271", "cterm": "11"  }
 
 let s:bg               = s:black
 let s:bg_subtle        = s:light_black
@@ -61,14 +60,13 @@ let s:red              = s:light_red
 let s:yellow           = s:light_yellow
 let s:visual           = s:lighter_black
 let s:cursor_line      = s:subtle_black
-let s:constant         = s:primary_light
+let s:constant         = s:primary
 let s:comment          = s:light_gray
 let s:selection        = s:light_blue
 let s:selection_fg     = s:black
 let s:ok               = s:light_green
 let s:warning          = s:yellow
 let s:error            = s:light_red
-let s:statement        = s:primary
 
 unlet s:black
 unlet s:medium_gray
@@ -92,7 +90,6 @@ unlet s:light_purple
 unlet s:light_yellow
 unlet s:dark_yellow
 unlet s:primary
-unlet s:primary_light
 
 
 " https://github.com/noahfrederick/vim-hemisu/
@@ -156,7 +153,7 @@ hi! link Directory        Constant
 hi! link Title            Constant
 
 " __Statement__
-call s:h("Statement",     {"fg": s:statement, "gui": "bold"})
+call s:h("Statement",     {"fg": s:norm, "gui": "bold"})
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
 hi! link Label            Statement

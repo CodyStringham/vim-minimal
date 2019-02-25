@@ -236,6 +236,9 @@ hi! link TabLineFill        Normal
 call s:h("CursorLine",    {"bg": s:cursor_line})
 " __CursorColumn__
 call s:h("ColorColumn",   {"bg": s:cursor_line})
+" _ CursorLineNr
+call s:h("CursorLineNr",  {"gui": "bold", "fg": s:constant})
+
 
 " __MatchParen__
 call s:h("MatchParen",    {"bg": s:bg_subtle, "fg": s:norm})

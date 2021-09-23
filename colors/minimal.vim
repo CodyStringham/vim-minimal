@@ -195,6 +195,11 @@ call s:h("DiffChange",    {"fg": s:yellow})
 " __DiffText__
 call s:h("DiffText",      {"fg": s:constant})
 
+call s:h("GitGutterAddLineNr",      {"fg": s:green})
+call s:h("GitGutterChangeLineNr",   {"fg": s:yellow})
+call s:h("GitGutterDeleteLineNr",   {"fg": s:red})
+" GitGutterChangeDeleteLineNr
+
 if has("gui_running")
   call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
   call s:h("SpellCap",    {"gui": "underline", "sp": s:ok})
